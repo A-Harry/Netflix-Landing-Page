@@ -122,7 +122,6 @@ img{
         .tabs .container > div:hover{
             color:#fff;
             cursor: pointer;
-            fill: #fff;
          }
     .tabs p {
         font-size: 1.2rem;
