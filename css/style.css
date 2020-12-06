@@ -1,6 +1,7 @@
 /* global */
 :root{
     --primary-color: #e50914;
+    --dark-color: #141414;
 }
 
 *{
@@ -99,6 +100,57 @@ img{
     line-height: 1.25;
     margin: 0 0 2rem;
 }
+
+/* Tabs */
+.tabs{
+    background: var(--dark-color);
+    padding-top: 1rem;
+    border-bottom:3px solid #3d3d3d
+}
+
+    .tabs .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+        .tabs .container .tab-item{
+           padding: 1rem 0; 
+        }
+        .tabs .container > div:hover{
+            color:#fff;
+            cursor: pointer;
+            fill: #fff;
+         }
+    .tabs p {
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
+    }
+
+    .tab-border{
+        border-bottom: var(--primary-color) 4px solid;
+    }
+/* Container */
+.container{
+    max-width:70%;
+    margin: auto;
+    overflow:hidden;
+    padding: 0 2rem
+}
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: rgb(241, 3, 3);
+    fill: white;
+  }
+  .icon-chevron-right {
+    width: 0.6787109375em;
+  }
+
 /* Buttons */
 .btn{
     display: inline-block;
@@ -115,36 +167,24 @@ img{
     border-radius: 2px;
 }
 
-.btn:hover{
-    opacity: 0.9;
-}
+    .btn:hover{
+        opacity: 0.9;
+    }
 
-.btn-rounded{
-    border-radius: 5px;
-}
+    .btn-rounded{
+        border-radius: 5px;
+    }
 
-btn-xl{
-    font-size: 2rem;
-    padding:1.5rem 2.1rem
-    text-transfor
-}
+    .btn-xl{
+        font-size: 2rem;
+        padding:1.5rem 2.1rem
+    }
 
-.btn-lg{
-    font-size: 1rem;
-    padding: 0.8rem 1.3rem;
-    text-transform:uppercase;
-}
-
+    .btn-lg{
+        font-size: 1rem;
+        padding: 0.8rem 1.3rem;
+        text-transform:uppercase;
+    }
 
 
-.icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: rgb(241, 3, 3);
-    fill: white;
-  }
-  .icon-chevron-right {
-    width: 0.6787109375em;
-  }
+
