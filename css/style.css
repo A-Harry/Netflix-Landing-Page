@@ -170,6 +170,30 @@ img{
     overflow:hidden;
     padding: 0 2rem
 }
+.table{
+    width:100%;
+    margin-top: 2rem;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.table thead th{
+    text-transform: uppercase;
+    padding:1rem;
+}
+.table tbody tr td{
+    color:#999;
+    padding: 0.8rem 1.2rem;
+    text-align: center;
+}
+
+.table tbody tr td:first-child{
+    text-align: left;
+}
+
+.table tbody tr:nth-child(even){
+    background-color: #222;
+}
 
 /* Text Styles */
     .text-xl{
