@@ -335,7 +335,7 @@ img{
 
 @media(max-width:768px){
     .showcase::after{
-        box-shadow: inset 80px 80px 250px -80px
+        box-shadow: inset 80px 80px 250px black, inset -80px -80px 220px black
     }
 
     #tab-1-content .tab-1-content-inner{
