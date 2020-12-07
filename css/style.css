@@ -108,6 +108,16 @@ img{
     border-bottom:3px solid #3d3d3d
 }
 
+/* Hide content initially */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content{
+    display: none;
+}
+.show{
+    display: block !important;
+}
+
     .tabs .container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -238,14 +248,16 @@ img{
 
 .icon {
     display: inline-block;
-    width: 1em;
+    width: 1rem;
     height: 1em;
     stroke-width: 0;
-    stroke: rgb(241, 3, 3);
+    stroke: none;
     fill: white;
-  }
-  .icon-chevron-right {
-    width: 0.6787109375em;
+}
+.icon-chevron-right {
+    width: 1.6787109375rem;
+    /* margin-left: 1rem; */
+    padding-top: 0.9rem;
   }
 
 /* Buttons */
@@ -282,6 +294,7 @@ img{
         padding: 0.8rem 1.3rem;
         text-transform:uppercase;
     }
+
 
 @media(max-width:960px){
     .showcase{
