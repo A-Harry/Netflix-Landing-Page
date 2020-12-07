@@ -195,10 +195,32 @@ img{
     background-color: #222;
 }
 
+/* Footer */
+.footer{
+    max-width:75%;
+    margin: 1rem auto;
+    overflow: auto;
+}
+
+.footer, .footer a{
+    color:#999;
+    font-size: 0.9rem;
+}
+.footer p{
+    margin-bottom:1.5rem;
+}
+.footer .footer-cols{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+.footer li{
+    line-height: 1.9rem;
+}
 /* Text Styles */
     .text-xl{
         font-size: 2rem;
-        margin-bottom:1rem;
+        margin-bottom: 1rem;
     }
     .text-lg{
         font-size: 1.5rem;
